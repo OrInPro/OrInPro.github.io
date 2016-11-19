@@ -1,7 +1,26 @@
 <html>
 <head>
     <title>JustaWebsite</title>
-
+    <script>
+	function fart() {
+		confirm("One day you made a fart!");
+		var user = prompt('Do you want to smell it say "yes, no or maybe"').toLowerCase();
+		switch(user){
+    		case("yes") :
+   			confirm("ahhh it smells soo good");
+    			break;
+    		case("no") :
+    			confirm('your missing out!');
+    			break;
+   		case("maybe") :
+    			confirm(':( i wolud have loved to smell it');
+   			break;
+    		default:
+    			confirm('go back and say "yes, no or maybe"');
+    			break;
+		}
+	}
+</script>
 </head>
 <body>
     <h1 style="color:red">Welcome To My Website..<h1>
@@ -9,6 +28,7 @@
     <ul>
     <li>Bob</li>
     <li>Nikki</li></ul>
+<button onclick="fart()">big decision</button>
 
 </body>
 </html>
